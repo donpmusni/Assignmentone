@@ -12,33 +12,33 @@
  *
  * @link https://developer.wordpress.org/themes/functionality/custom-headers/
  *
- * @package assignment1
+ * @package assignmentone
  */
 
 /**
  * Set up the WordPress core custom header feature.
  *
- * @uses assignment1_header_style()
+ * @uses assignmentone_header_style()
  */
-function assignment1_custom_header_setup() {
-	add_theme_support( 'custom-header', apply_filters( 'assignment1_custom_header_args', array(
+function assignmentone_custom_header_setup() {
+	add_theme_support( 'custom-header', apply_filters( 'assignmentone_custom_header_args', array(
 		'default-image'          => '',
 		'default-text-color'     => '000000',
 		'width'                  => 1000,
 		'height'                 => 250,
 		'flex-height'            => true,
-		'wp-head-callback'       => 'assignment1_header_style',
+		'wp-head-callback'       => 'assignmentone_header_style',
 	) ) );
 }
-add_action( 'after_setup_theme', 'assignment1_custom_header_setup' );
+add_action( 'after_setup_theme', 'assignmentone_custom_header_setup' );
 
-if ( ! function_exists( 'assignment1_header_style' ) ) :
+if ( ! function_exists( 'assignmentone_header_style' ) ) :
 /**
  * Styles the header image and text displayed on the blog.
  *
- * @see assignment1_custom_header_setup().
+ * @see assignmentone_custom_header_setup().
  */
-function assignment1_header_style() {
+function assignmentone_header_style() {
 	$header_text_color = get_header_textcolor();
 
 	/*

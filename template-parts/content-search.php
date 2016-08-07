@@ -4,7 +4,7 @@
  *
  * @link https://codex.wordpress.org/Template_Hierarchy
  *
- * @package assignment1
+ * @package assignmentone
  */
 
 ?>
@@ -15,7 +15,7 @@
 
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
-			<?php assignment1_posted_on(); ?>
+			<?php assignmentone_posted_on(); ?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
@@ -25,6 +25,6 @@
 	</div><!-- .entry-summary -->
 
 	<footer class="entry-footer">
-		<?php assignment1_entry_footer(); ?>
+		<?php assignmentone_entry_footer(); ?>
 	</footer><!-- .entry-footer -->
 </article><!-- #post-## -->
