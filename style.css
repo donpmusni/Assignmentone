@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Media
 	## Captions
 	## Galleries
+#Assignment 1 Changes
 --------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
@@ -891,4 +892,28 @@ object {
 
 .gallery-caption {
 	display: block;
+}
+
+/*--------------------------------------------------------------
+## Assignment 1 Changes
+--------------------------------------------------------------*/
+
+body {
+	font-family: Helvetica, Arial, sans-serif;
+	font-size: 16px;
+
+}
+
+#content {
+	margin: 0 auto;
+	max-width: 960px;
+}
+
+#primary {
+	float: left;
+	width: 70%;
+}
+#secondary {
+	float: right;
+	max-width: 20%;
 }
