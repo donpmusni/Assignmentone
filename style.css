@@ -437,7 +437,8 @@ input[type="submit"] {
 button:before{
     font-family: 'FontAwesome';
     content: '\f0c9';
-    font-size: 3em;
+    font-size: 2em;
+    border: none;
 }
 
 /*button:hover,
@@ -978,6 +979,11 @@ body {
 #colophon a:hover {
 	color: #ffbb33;
 }
+
+.site-info {
+	font-size: 0.7em;
+}
+
 /*--------------------------------------------------------------
 ## Menus
 --------------------------------------------------------------*/
@@ -1014,7 +1020,10 @@ body {
 }
 
  @media screen and (max-width: 37.5em) {
- 	.main-navigation li {
+ 	.main-navigation {
+ 		background-color: #1F1C23;
+	}
+ 		.main-navigation li {
  		display: block;
  		color: #fff;
  	}

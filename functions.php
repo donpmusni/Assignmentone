@@ -144,3 +144,17 @@ require get_template_directory() . '/inc/jetpack.php';
 
 /* enqueue options page */
 require get_stylesheet_directory() . '/inc/options.php';
+
+add_action( 'init', 'create_post_type' );
+function create_post_type() {
+  register_post_type( 'Works',
+    array(
+      'labels' => array(
+        'name' => __( 'Works' ),
+        'singular_name' => __( 'Project' )
+      ),
+      'public' => true,
+      'has_archive' => true,
+    )
+  );
+}
