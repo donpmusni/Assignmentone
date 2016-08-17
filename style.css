@@ -424,7 +424,7 @@ input[type="submit"] {
     /*border: 1px solid;*/
 	/*border-color: #ccc #ccc #bbb;*/
 	/*border-radius: 3px;*/
-	background: #333;
+	background: #1F1C23;
 	/*box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.5), inset 0 15px 17px rgba(255, 255, 255, 0.5), inset 0 -5px 12px rgba(0, 0, 0, 0.05);*/
 	color: #fff;
 	font-size: 12px;
@@ -452,7 +452,7 @@ button:focus,
 input[type="button"]:focus,
 input[type="reset"]:focus,
 input[type="submit"]:focus {
-	background-color: #666;
+	background-color: #1F1C23;
 }
 button:active,
 input[type="button"]:active,
@@ -460,7 +460,7 @@ input[type="reset"]:active,
 input[type="submit"]:active {
 	/*border-color: #aaa #bbb #bbb;
 	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 0.5), inset 0 2px 5px rgba(0, 0, 0, 0.15);*/
-    background-color: #555; 
+    background-color: #1F1C23; 
 } 
 
 input[type="text"],
@@ -909,7 +909,9 @@ object {
 /*--------------------------------------------------------------
 # Assignment 1 Changes
 --------------------------------------------------------------*/
-
+#page {
+	background-color: #DEDBE0;
+}
 body {
 	font-family: Helvetica, Arial, sans-serif;
 	font-size: 16px;
@@ -936,16 +938,45 @@ body {
 	float: right;
 	max-width: 20%;
 }
-
+/*header styling */
 #masthead {
 	margin: 0 auto;
 	text-align: center;
 }
 
+#masthead img {
+	width: 100%; /*make header image full width of site at all times */
+	margin: 0;
+}
+
+.site-title {
+	margin-bottom: 0;
+}
+.site-title a{
+	font-size: 2em;
+	color: #1E1E21;
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: 600;
+}
+
+.site-desrcription p{
+	margin-top: 0;
+}
+/*footer styling */
 #colophon {
 	margin: 0 auto;
 	width: 100%;
 	text-align: center;
+	background-color: #1F1C23;
+}
+
+#colophon a {
+	color: #fff;
+}
+
+#colophon a:hover {
+	color: #ffbb33;
 }
 /*--------------------------------------------------------------
 ## Menus
@@ -954,10 +985,18 @@ body {
 
 .nav-menu {
 	margin: 0 auto;
+	background-color: #1F1C23;
 }
 .main-navigation a {
 	margin: 1em 1.25em;
 	text-transform: uppercase;
+	color: #fff;
+ 	font-weight: 700;
+ 	font-size: .90em;
+}
+
+.main-navigation a:hover {
+	color: #ffbb33;
 }
 
 .main-navigation ul.nav-menu {
@@ -971,11 +1010,25 @@ body {
 }
 
 .menu-toggle {
-	margin: 1em;
+	margin: 0 1em;
 }
 
  @media screen and (max-width: 37.5em) {
  	.main-navigation li {
  		display: block;
+ 		color: #fff;
+ 	}
+
+ 	.main-navigation a {
+ 		color: #fff;
+ 		margin: .5em;
+ 	}
+ 	.main-navigation a:hover {
+ 		background-color: #ffbb33;
+ 		color: #333;
+ 	}
+
+ 	.main-navigation.toggled {
+ 		background-color: #1F1C23;
  	}
  }
