@@ -15,8 +15,10 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'assignmentone' ) ); ?>"><?php printf( esc_html__( 'Proudly powered by %s', 'assignmentone' ), 'WordPress' ); ?></a>
-			<span class="sep"> | </span>
+			<div class="bottomMenu">
+              <?php wp_nav_menu( array( 'theme_location' => 'social' ) ); ?>  
+    </div>
+			
 			<?php printf( esc_html__( 'Theme: %1$s by %2$s.', 'assignmentone' ), 'assignmentone', '<a href="http://underscores.me/" rel="designer">Underscores.me</a>' ); ?>
 		</div><!-- .site-info -->
 	</footer><!-- #colophon -->
