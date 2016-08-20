@@ -143,7 +143,7 @@ require get_template_directory() . '/inc/customizer.php';
  * Load Jetpack compatibility file.
  */
 require get_template_directory() . '/inc/jetpack.php';
-
-
-/*add post thumbnails for featured images */
+/*Options Page for Assignment 1*/
+require get_template_directory() . '/inc/options.php';
+/*add thumbnail support for Featured Image on CPT for Assignment 2*/
 add_theme_support('post-thumbnails');

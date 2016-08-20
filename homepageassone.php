@@ -34,12 +34,18 @@ get_header(); ?>
 	</div><!-- #primary -->
 	<div id="services" class="home-services-area">
 		<h1 class="entry-title">Services</h1>
-		<ul>
-			<li>Lorem Ipsum test</li>
-		</ul>
+		<p>
+			<?php //sets content under Services from the Options Page
+                $dpoptions = get_option('dp_options_settings');        
+                echo $dpoptions['services']
+                    ?>
+		</p>
 	</div>
 	<div id="home-button" class="learn-more-button">
-	<a href="wp/blog" >Get to know me</a>
+	<a href="<?php //This button links to the page set in Options Page
+                $dpoptions = get_option('dp_options_settings');
+                echo $dpoptions['butt_link'] 
+                         ?>">Experience</a>
 	</div>
 
 	<?php
